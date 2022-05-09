@@ -1,4 +1,5 @@
-import { LoadingSpinerComponent } from "./shared/loading-spinner/loading-spinner.component";
+import { PlaceholderDirective } from "./shared/placeholder/placeholder.directive";
+import { LoadingSpinnerComponent } from "./shared/loading-spinner/loading-spinner.component";
 import { BrowserModule } from "@angular/platform-browser";
 import { NgModule } from "@angular/core";
 import { FormsModule, ReactiveFormsModule } from "@angular/forms";
@@ -19,6 +20,7 @@ import { RecipeEditComponent } from "./recipes/recipe-edit/recipe-edit.component
 import { RecipeService } from "./recipes/recipe.service";
 import { AuthComponent } from "./auth/auth.component";
 import { AuthInterceptorService } from "./auth/auth-interceptor.service";
+import { AlertComponent } from "./shared/alert/alert.component";
 
 @NgModule({
   declarations: [
@@ -34,7 +36,9 @@ import { AuthInterceptorService } from "./auth/auth-interceptor.service";
     RecipeStartComponent,
     RecipeEditComponent,
     AuthComponent,
-    LoadingSpinerComponent,
+    LoadingSpinnerComponent,
+    AlertComponent,
+    PlaceholderDirective,
   ],
   imports: [
     BrowserModule,
